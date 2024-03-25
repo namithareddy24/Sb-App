@@ -1,0 +1,23 @@
+package in.Namitha;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmpService {
+	private EmpReposit empReposit;
+
+	public EmpService(EmpReposit empReposit) {
+		this.empReposit = empReposit;
+	}
+	public void saveEmployee() {
+		System.out.println("Impl class:"+ empReposit.getClass().getName());
+		Employee e=new Employee();
+		e.setEid(101);
+		e.setEname("Namitha");
+		e.setEsalary(40000.7);
+		empReposit.save(e);
+		System.out.println("Record saved...");
+	}
+	
+
+}

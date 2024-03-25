@@ -1,0 +1,10 @@
+spring.application.name=6-SB-Web-MVC-Registration-Login
+
+spring.datasource.url=jdbc:mysql://localhost:3306/spring
+spring.datasource.username=root
+spring.datasource.password=Namitha@9
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+server.port=8090
